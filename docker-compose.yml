@@ -8,3 +8,10 @@ services:
     - "4200:4200"
     container_name: front-container
     # restart: always
+
+  backend:
+    build: backend
+    ports:
+    - "3000:3000"
+    container_name: back-container
+    # restart: always
